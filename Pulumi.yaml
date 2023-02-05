@@ -1,0 +1,4 @@
+name: pulumi-scala-feral
+description: AWS Lambda with Feral
+runtime:
+  name: java
