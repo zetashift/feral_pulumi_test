@@ -1,6 +1,6 @@
 # Feral and Pulumi
 
-Deploy your [Lambda](https://aws.amazon.com/lambda/) using [Scala]( https://github.com/typelevel/feral) and [Pulumi](https://www.pulumi.com/), all in Scala!
+An example of deploying your [Lambda](https://aws.amazon.com/lambda/) using [Scala]( https://github.com/typelevel/feral) and [Pulumi](https://www.pulumi.com/), all in Scala!
 
 # Getting Started
 
