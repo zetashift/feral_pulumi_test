@@ -39,7 +39,7 @@ object Lambda:
   def createLambda(ctx: Context): Unit =
     val iamRole = Role("feralLambdaRole", rolePolicy)
     val codeArchive = FileArchive("modules/hello-feral/target/scala-3.2.1/npm-package")
-    val functionArgs = FunctionArgs.builder().code(codeArchive).role(iamRole.arn()).handler("index.handler").runtime("nodejs18.x").build()
+    val functionArgs = FunctionArgs.builder().code(codeArchive).role(iamRole.arn()).handler("index.HelloHandler").runtime("nodejs18.x").build()
     val helloFeral = Function("FeralFunction", functionArgs)
     ctx.`export`("Function", helloFeral.arn())
 
